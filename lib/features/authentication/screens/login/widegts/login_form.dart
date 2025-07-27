@@ -1,6 +1,8 @@
+import 'package:fk_ecommerce/routes/app_routes.dart';
 import 'package:fk_ecommerce/utils/constants/sizes.dart';
 import 'package:fk_ecommerce/utils/constants/text_Strings.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 
 class FkLoginForm extends StatelessWidget {
   const FkLoginForm({super.key});
@@ -82,7 +84,7 @@ class FkLoginForm extends StatelessWidget {
               width: double.infinity,
               child: OutlinedButton(
                 onPressed: () {
-                  // Handle login logic here
+                  Get.toNamed(Routes.SIGNUP);
                 },
                 child: Text(FKTextStrings.createAccount),
               ),

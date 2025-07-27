@@ -1,4 +1,6 @@
 import 'package:fk_ecommerce/features/authentication/screens/OnBoarding/onboarding_screen.dart';
+import 'package:fk_ecommerce/routes/app_pages.dart';
+import 'package:fk_ecommerce/routes/app_routes.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:fk_ecommerce/utils/theme/theme.dart';
 import 'package:flutter/material.dart';
@@ -17,12 +19,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'FK_ecommerce',
       themeMode: ThemeMode.system,
 
       theme: FkAppTheme.lighttheme,
       darkTheme: FkAppTheme.darktheme,
-      home: OnboardingScreen(),
+      // home: OnboardingScreen(),
+      initialRoute: Routes.OnBoarding, // Correct starting point
+      getPages: appPages,
     );
   }
 }

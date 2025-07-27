@@ -1,4 +1,5 @@
 import 'package:fk_ecommerce/features/authentication/screens/login/login_screen.dart';
+import 'package:fk_ecommerce/routes/app_routes.dart';
 import 'package:flutter/widgets.dart';
 import 'package:get/get.dart';
 
@@ -16,7 +17,7 @@ class OnboardingController extends GetxController {
 
   void nextPage() {
     if (currentPageIndex.value == 2) {
-      Get.offAll(() => LoginScreen());
+      Get.offAllNamed(Routes.LOGIN);
     } else {
       int page = currentPageIndex.value + 1;
       pagecontroller.jumpToPage(page);
