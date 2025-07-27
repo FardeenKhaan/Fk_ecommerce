@@ -1,16 +1,61 @@
-# fk_ecommerce
+# 🛒 FK E-Commerce App
 
-A new Flutter project.
+> A modern eCommerce Flutter app — built with Firebase & Supabase — under **active daily development**.
 
-## Getting Started
+Welcome to **FK E-Commerce**, a feature-rich mobile shopping app developed in **Flutter** with a powerful backend powered by **Firebase** and **Supabase**. This project is being worked on and improved **daily**, with new features, refactors, and enhancements committed frequently.
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📸 App Screenshots
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+| Onboarding               | Authtication               | Product Details         |
+|--------------------------|--------------------------|---------------------------|
+| <img width="300" height="500" alt="1" src="https://github.com/user-attachments/assets/32734f0e-a09f-49c5-9efc-a8fddabf5ee9" />| <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/b67516d7-196f-405a-9af8-fa16f468b6d8" />|![](screenshots/product_detail.png) |
+| <img width="300" height="500" alt="3" src="https://github.com/user-attachments/assets/1321b260-8ba5-41bb-b01e-81b1702cf13a" />|<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/c1d7343e-e1f6-45c6-b87e-fe9cf07c06af" />![](screenshots/product_detail.png) |
+| <img width="300" height="500" alt="2" src="https://github.com/user-attachments/assets/10fabe2e-ab56-456f-ac5d-ba10aadc6058" />| ![](screenshots/onboarding.png) | ![](screenshots/product_detail.png) |
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+---
+
+## 🚧 Project Status
+
+🔄 **Actively Updated Daily**  
+📦 Core features implemented  
+🧾 Backend integrated (Firebase + Supabase)  
+💳 Payment system in progress  
+
+---
+
+## ✨ Key Features
+
+- 📱 Beautiful, Flutter UI
+- 🔐 Firebase Authentication (Email/Password)
+- 📦 Product storage using Supabase (PostgreSQL)
+- 🛒 Shopping cart system
+- 🧭 Onboarding flow with splash screens
+- 🔧 GetX-based state management & routing
+- 📊 Firebase Analytics support
+- 💳 **Upcoming**: Stripe or Razorpay integration
+
+---
+
+## 📚 Tech Stack
+
+| Tool/Platform  | Role                            |
+|----------------|---------------------------------|
+| Flutter        | UI & cross-platform development |
+| Firebase       | Auth, Analytics                 |
+| Supabase       | Product data, real-time DB      |
+| GetX           | State mgmt & navigation         |
+| Google Fonts   | Custom text styling             |
+
+---
+🧑‍💻 About Me
+👋 Hi, I’m Fardeen Khan
+📬 Email: fardeenkhaan70@gmail.com
+🔗 LinkedIN: www.linkedin.com/in/fardeenkhan51
+I build this app while learning advanced Flutter concepts, and I'm continuously working on it to turn it into a production-grade solution.
+
