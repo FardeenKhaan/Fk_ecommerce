@@ -1,9 +1,12 @@
+import 'package:fk_ecommerce/routes/app_routes.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:fk_ecommerce/utils/constants/sizes.dart';
 import 'package:fk_ecommerce/utils/constants/text_Strings.dart';
 import 'package:fk_ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/helper_utils.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class FkSignUpForm extends StatelessWidget {
   const FkSignUpForm({super.key});
@@ -141,7 +144,7 @@ class FkSignUpForm extends StatelessWidget {
               width: double.infinity,
               child: ElevatedButton(
                 onPressed: () {
-                  // Handle login logic here
+                  Get.offNamed(Routes.VerifyEmail);
                 },
                 child: Text(FKTextStrings.createAccount),
               ),
