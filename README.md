@@ -12,7 +12,8 @@ Welcome to **FK E-Commerce**, a feature-rich mobile shopping app developed in **
 |--------------------------|--------------------------|---------------------------|
 | <img width="300" height="500" alt="1" src="https://github.com/user-attachments/assets/32734f0e-a09f-49c5-9efc-a8fddabf5ee9" />| <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/b67516d7-196f-405a-9af8-fa16f468b6d8" />|![](screenshots/product_detail.png) |
 | <img width="300" height="500" alt="3" src="https://github.com/user-attachments/assets/1321b260-8ba5-41bb-b01e-81b1702cf13a" />|<img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/c1d7343e-e1f6-45c6-b87e-fe9cf07c06af" />![](screenshots/product_detail.png) |
-| <img width="300" height="500" alt="2" src="https://github.com/user-attachments/assets/10fabe2e-ab56-456f-ac5d-ba10aadc6058" />| ![](screenshots/onboarding.png) | ![](screenshots/product_detail.png) |
+| <img width="300" height="500" alt="2" src="https://github.com/user-attachments/assets/10fabe2e-ab56-456f-ac5d-ba10aadc6058" />| <img width="300" height="500" alt="image" src="https://github.com/user-attachments/assets/c923234e-74fd-49c8-9859-41f6aea8cc28" />| ![](screenshots/product_detail.png) |
+
 
 
 
