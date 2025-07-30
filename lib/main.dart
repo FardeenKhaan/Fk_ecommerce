@@ -24,7 +24,6 @@ class MyApp extends StatelessWidget {
 
       theme: FkAppTheme.lighttheme,
       darkTheme: FkAppTheme.darktheme,
-      // home: OnboardingScreen(),
       initialRoute: Routes.OnBoarding, // Correct starting point
       getPages: appPages,
     );

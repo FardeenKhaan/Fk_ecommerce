@@ -59,6 +59,7 @@ class FkLoginForm extends StatelessWidget {
                 TextButton(
                   onPressed: () {
                     // Handle forgot password logic here
+                    Get.toNamed(Routes.ForgotPassword);
                   },
                   child: Text(
                     FKTextStrings.forgetPassword,

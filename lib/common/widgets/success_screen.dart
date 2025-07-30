@@ -27,7 +27,7 @@ class SuccessScreen extends StatelessWidget {
             children: [
               Image(
                 image: AssetImage(FKImageStrings.verifyIllustration),
-                width: FkHelperFunction.screenWidth() * 0.06,
+                width: FkHelperFunction.screenWidth() * 0.3,
               ),
               SizedBox(height: FKSizes.spaceBtwItems),
               // title & subtitle
