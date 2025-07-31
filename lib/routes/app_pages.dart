@@ -5,6 +5,7 @@ import 'package:fk_ecommerce/features/authentication/screens/password_configurat
 import 'package:fk_ecommerce/features/authentication/screens/password_configuration/reset_password.dart';
 import 'package:fk_ecommerce/features/authentication/screens/signup/signup_screen.dart';
 import 'package:fk_ecommerce/features/authentication/screens/signup/verify_email.dart';
+import 'package:fk_ecommerce/navigation_menu.dart';
 import 'package:fk_ecommerce/routes/app_routes.dart';
 import 'package:get/get_navigation/src/routes/get_route.dart';
 
@@ -16,4 +17,5 @@ final List<GetPage> appPages = [
   GetPage(name: Routes.SuccessScreen, page: () => SuccessScreen()),
   GetPage(name: Routes.ForgotPassword, page: () => ForgotPassword()),
   GetPage(name: Routes.ResetPassword, page: () => ResetPassword()),
+  GetPage(name: Routes.NavigationMenu, page: () => NavigationMenu()),
 ];

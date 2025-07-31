@@ -76,6 +76,7 @@ class FkLoginForm extends StatelessWidget {
               child: ElevatedButton(
                 onPressed: () {
                   // Handle login logic here
+                  Get.offNamed(Routes.NavigationMenu);
                 },
                 child: Text(FKTextStrings.signIn),
               ),

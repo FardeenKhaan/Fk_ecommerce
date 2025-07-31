@@ -8,5 +8,6 @@ abstract class Routes {
   static const SuccessScreen = '/success_screen';
   static const ForgotPassword = '/forgot_password';
   static const ResetPassword = '/reset_password';
+  static const NavigationMenu = '/navigation_menu';
   static const MARKSHEET = '/marksheet';
 }
