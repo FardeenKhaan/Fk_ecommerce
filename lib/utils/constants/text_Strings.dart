@@ -61,4 +61,8 @@ class FKTextStrings {
       "Your account successfully created!";
   static const String yourAccountCreatedSubTitle =
       "Welcome to Your Ultimate Shopping Destination: Your Account is Created, Unleash the Joy of Seamless Online Shopping!";
+
+  // --HOme
+  static const String homeAppBarTitle = 'Good Day for Shopping';
+  static const String homeAppBarSubtitle = 'Fardeen Khan';
 }
