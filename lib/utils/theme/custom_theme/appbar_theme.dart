@@ -5,7 +5,7 @@ class FKAppBarTheme {
 
   static final lightAppBarTheme = AppBarTheme(
     backgroundColor: Colors.transparent,
-    foregroundColor: Colors.transparent,
+    // foregroundColor: Colors.transparent,
     centerTitle: false,
     elevation: 0,
     scrolledUnderElevation: 0,
@@ -21,7 +21,7 @@ class FKAppBarTheme {
 
   static final darkAppBarTheme = AppBarTheme(
     backgroundColor: Colors.transparent,
-    foregroundColor: Colors.transparent,
+    // foregroundColor: Colors.transparent,
     centerTitle: false,
     elevation: 0,
     scrolledUnderElevation: 0,
