@@ -31,13 +31,7 @@ class FkPrimaryHeaderContainer extends StatelessWidget {
                   backgroundColor: FKColors.textWhite.withOpacity(0.1),
                 ),
               ),
-              // Column(
-              //   children: [
-              //     // appbar
-              //     // categories
-              //     // searchbar
-              //   ],
-              // ),
+              child,
             ],
           ),
         ),
