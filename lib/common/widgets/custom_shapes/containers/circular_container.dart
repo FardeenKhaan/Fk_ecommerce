@@ -1,14 +1,15 @@
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:flutter/material.dart';
 
-class circularContainer extends StatelessWidget {
+class FkCircularContainer extends StatelessWidget {
   final double? height;
   final double? width;
   final double? radius;
+  final EdgeInsets? margin;
   final double? padding;
   final Widget? child;
   final Color backgroundColor;
-  const circularContainer({
+  const FkCircularContainer({
     super.key,
     this.height = 400,
     this.width = 400,
@@ -16,6 +17,7 @@ class circularContainer extends StatelessWidget {
     this.backgroundColor = FKColors.white,
     this.radius = 400,
     this.child,
+    this.margin,
   });
 
   @override
@@ -24,6 +26,7 @@ class circularContainer extends StatelessWidget {
       height: height,
       width: width,
       padding: EdgeInsets.all(padding!),
+      margin: margin,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius!),
         color: backgroundColor,
