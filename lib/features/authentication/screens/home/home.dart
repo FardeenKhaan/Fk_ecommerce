@@ -1,14 +1,11 @@
-import 'package:fk_ecommerce/common/widgets/common_text_widget/vertical_image_text.dart';
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:fk_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:fk_ecommerce/features/authentication/screens/home/widgets/home_appbar.dart';
 import 'package:fk_ecommerce/features/authentication/screens/home/widgets/home_categories.dart';
-import 'package:fk_ecommerce/utils/constants/colors.dart';
+import 'package:fk_ecommerce/features/authentication/screens/home/widgets/promo_slider.dart';
 import 'package:fk_ecommerce/utils/constants/image_Strings.dart';
 import 'package:fk_ecommerce/utils/constants/sizes.dart';
-import 'package:fk_ecommerce/utils/device/device_utility.dart';
-import 'package:fk_ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -46,6 +43,18 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                ],
+              ),
+            ),
+
+            // Body
+            Padding(
+              padding: const EdgeInsets.all(FKSizes.defaultSpace),
+              child: FkPromoSlider(
+                banners: [
+                  FKImageStrings.promoBanner1,
+                  FKImageStrings.promoBanner2,
+                  FKImageStrings.promoBanner1,
                 ],
               ),
             ),
