@@ -1,4 +1,4 @@
-import 'package:fk_ecommerce/common/styles/products_cart/cart_menu_icon.dart';
+import 'package:fk_ecommerce/common/widgets/products/cart/cart_menu_icon.dart';
 import 'package:fk_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:fk_ecommerce/utils/constants/text_Strings.dart';

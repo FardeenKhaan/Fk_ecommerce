@@ -1,5 +1,6 @@
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
+import 'package:fk_ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:fk_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:fk_ecommerce/features/authentication/screens/home/widgets/home_appbar.dart';
 import 'package:fk_ecommerce/features/authentication/screens/home/widgets/home_categories.dart';
@@ -50,11 +51,20 @@ class HomeScreen extends StatelessWidget {
             // Body
             Padding(
               padding: const EdgeInsets.all(FKSizes.defaultSpace),
-              child: FkPromoSlider(
-                banners: [
-                  FKImageStrings.promoBanner1,
-                  FKImageStrings.promoBanner2,
-                  FKImageStrings.promoBanner1,
+              child: Column(
+                children: [
+                  FkPromoSlider(
+                    banners: [
+                      FKImageStrings.promoBanner1,
+                      FKImageStrings.promoBanner2,
+                      FKImageStrings.promoBanner1,
+                    ],
+                    
+                  ),
+                  SizedBox(height: FKSizes.spaceBtwItems),
+                  FkProductCardVertical(
+
+                  ),
                 ],
               ),
             ),
