@@ -1,4 +1,3 @@
-import 'package:fk_ecommerce/common/widgets/success_screen.dart';
 
 abstract class Routes {
   static const LOGIN = '/login';
