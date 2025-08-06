@@ -54,4 +54,47 @@ class FKImageStrings {
       "assets/images/products/promo-banner-2.png";
   static const String promoBanner3 =
       "assets/images/products/promo-banner-1.png";
+
+  // -- Products
+  static const String productImages = "assets/images/products/nike-shoes.png";
+  static const String productImages2 = "assets/images/products/product-1.png";
+  static const String productImages3 =
+      "assets/images/products/product-jacket.png";
+  static const String productImages4 =
+      "assets/images/products/product-jeans.png";
+  static const String productImages5 =
+      "assets/images/products/product-shirt.png";
+  static const String productImages6 =
+      "assets/images/products/product-slippers.png";
+  static const String productImages7 =
+      "assets/images/products/nikeairjordanbackhat.png";
+  //   static const String productImages8 = "assets/images/products/nikeairjordanorange.png";
+  //   static const String productImages9 = "assets/images/products/nikeairjordanwhitepants.png";
+  //   static const String productImages10 = "assets/images/products/nikeairjordanwhiteback.png";
+  //   static const String productImages11 = "assets/images/products/samsung_s9_mobile.png";
+  //   static const String productImages12 = "assets/images/products/samsung_s9_mobile_whiteback.png";
+  //   static const String productImages13 = "assets/images/products/samsung_s9_mobile_back.png";
+  //   static const String productImages14 = "assets/images/products/iphone8_mobile.png";
+  //   static const String productImages15 = "assets/images/products/iphone8_mobile_back.png";
+  //   static const String productImages16 = "assets/images/products/iphone8_mobile_dual_side.png";
+  //   static const String productImages17 = "assets/images/products/iphone8_mobile_front.png";
+  //   static const String productImages18 = "assets/images/products/tomi_dogfood.png";
+  //   static const String productImages19 = "assets/images/products/nikeairjordanwhitefly.png";
+  //   static const String productImages20 = "assets/images/products/nikeairjordanwhiteorange.png";
+  //   static const String productImages21 = "assets/images/products/nikeairjordan.png";
+  //   static const String productImages22 = "assets/images/products/nikeairjordanairedscrewedblack.png";
+  //   static const String productImages23 = "assets/images/products/nikeairjordanred.png";
+  //   static const String productImages24 = "assets/images/products/tracksuit_black.png";
+  //   static const String productImages25 = "assets/images/products/tracksuit_blue.png";
+  //   static const String productImages26 = "assets/images/products/tracksuit_red.png";
+  //   static const String productImages27 = "assets/images/products/tracksuit_pants_green.png";
+  //   static const String productImages28 = "assets/images/products/adidas_football_bag.png";
+  //   static const String productImages29 = "assets/images/products/triple_bat_set.png";
+  //   static const String productImages30 = "assets/images/products/adidas_bucket_hat.png";
+  static const String productImages31 =
+      "assets/images/products/adidas_red_bag.png";
+  static const String productImages32 =
+      "assets/images/products/adidas_pink_bag.png";
+  static const String productImages33 =
+      "assets/images/products/adidas_brown_bag.png";
 }
