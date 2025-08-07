@@ -48,12 +48,9 @@ class FKImageStrings {
       "assets/icons/categories/icons8-smartphone-48.png";
 
   // Banners
-  static const String promoBanner1 =
-      "assets/images/products/promo-banner-1.png";
-  static const String promoBanner2 =
-      "assets/images/products/promo-banner-2.png";
-  static const String promoBanner3 =
-      "assets/images/products/promo-banner-1.png";
+  static const String promoBanner1 = "assets/images/banner/promo-banner-1.png";
+  static const String promoBanner2 = "assets/images/banner/promo-banner-2.png";
+  static const String promoBanner3 = "assets/images/banner/promo-banner-1.png";
 
   // -- Products
   static const String productImages = "assets/images/products/nike-shoes.png";
