@@ -1,4 +1,5 @@
 import 'package:fk_ecommerce/common/styles/shadows.dart';
+<<<<<<< HEAD
 import 'package:fk_ecommerce/common/widgets/common_text_widget/product_price_text.dart';
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:fk_ecommerce/common/widgets/icons/fk_circular_icon.dart';
@@ -6,6 +7,10 @@ import 'package:fk_ecommerce/common/widgets/images/fk_rounded_image.dart';
 import 'package:fk_ecommerce/common/widgets/texts/product_title_text.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:fk_ecommerce/utils/constants/image_Strings.dart';
+=======
+import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
+import 'package:fk_ecommerce/utils/constants/colors.dart';
+>>>>>>> 2283de9bf68b0eab0cb0c82a9b994a67a25f7ad5
 import 'package:fk_ecommerce/utils/constants/sizes.dart';
 import 'package:fk_ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +21,7 @@ class FkProductCardVertical extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dark = FkHelperFunction.isDarkMode(context);
+<<<<<<< HEAD
     return GestureDetector(
       onTap: () {},
       child: Container(
@@ -127,6 +133,25 @@ class FkProductCardVertical extends StatelessWidget {
             ),
           ],
         ),
+=======
+    return Container(
+      width: 180,
+      padding: EdgeInsets.all(1),
+      decoration: BoxDecoration(
+        boxShadow: [FkShadowStyle.verticalProductShadow],
+        borderRadius: BorderRadius.circular(FKSizes.productImageRadius),
+        color: dark ? FKColors.darkGrey : FKColors.white,
+      ),
+      child: Column(
+        children: [
+          FkRoundedContainer(height: 180, padding: EdgeInsets.all(FKSizes.sm),
+          backgroundColor: dark? FKColors.dark : FKColors.light,
+          child: Stack(
+            
+          ),
+          )
+        ],
+>>>>>>> 2283de9bf68b0eab0cb0c82a9b994a67a25f7ad5
       ),
     );
   }
