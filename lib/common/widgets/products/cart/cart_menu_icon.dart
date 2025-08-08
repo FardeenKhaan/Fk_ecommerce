@@ -3,12 +3,8 @@ import 'package:flutter/material.dart';
 
 class FkCartCounterIcon extends StatelessWidget {
   final VoidCallback onPressed;
-  final Color IconColor;
-  const FkCartCounterIcon({
-    super.key,
-    required this.onPressed,
-    required this.IconColor,
-  });
+  final Color? IconColor;
+  const FkCartCounterIcon({super.key, required this.onPressed, this.IconColor});
 
   @override
   Widget build(BuildContext context) {
