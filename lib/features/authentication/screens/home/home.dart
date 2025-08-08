@@ -1,9 +1,6 @@
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/primary_header_container.dart';
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
-<<<<<<< HEAD
 import 'package:fk_ecommerce/common/widgets/layouts/grid_layout.dart';
-=======
->>>>>>> 2283de9bf68b0eab0cb0c82a9b994a67a25f7ad5
 import 'package:fk_ecommerce/common/widgets/products/product_cards/product_card_vertical.dart';
 import 'package:fk_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:fk_ecommerce/features/authentication/screens/home/widgets/home_appbar.dart';
@@ -54,11 +51,7 @@ class HomeScreen extends StatelessWidget {
 
             // Body
             Padding(
-<<<<<<< HEAD
               padding: EdgeInsets.all(FKSizes.defaultSpace),
-=======
-              padding: const EdgeInsets.all(FKSizes.defaultSpace),
->>>>>>> 2283de9bf68b0eab0cb0c82a9b994a67a25f7ad5
               child: Column(
                 children: [
                   FkPromoSlider(
@@ -67,21 +60,17 @@ class HomeScreen extends StatelessWidget {
                       FKImageStrings.promoBanner2,
                       FKImageStrings.promoBanner1,
                     ],
-<<<<<<< HEAD
                   ),
+                  SizedBox(height: FKSizes.spaceBtwItems),
+
+                  // Headings
+                  FkSectionHeading(title: 'Popular Products', onPressed: () {}),
                   SizedBox(height: FKSizes.spaceBtwItems),
 
                   // --Popular Products
                   FkGridLayout(
                     itemcount: 4,
                     itembuilder: (BuildContext, int) => FkProductCardVertical(),
-=======
-                    
-                  ),
-                  SizedBox(height: FKSizes.spaceBtwItems),
-                  FkProductCardVertical(
-
->>>>>>> 2283de9bf68b0eab0cb0c82a9b994a67a25f7ad5
                   ),
                 ],
               ),
