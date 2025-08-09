@@ -46,6 +46,7 @@ class FKImageStrings {
       "assets/icons/categories/icons8-sparkling-diamond-64.png";
   static const String electronicsIcon =
       "assets/icons/categories/icons8-smartphone-48.png";
+  static const String clothIcon = "assets/icons/categories/cloth_icon.png";
 
   // Banners
   static const String promoBanner1 = "assets/images/banner/promo-banner-1.png";
