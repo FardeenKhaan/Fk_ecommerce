@@ -9,6 +9,7 @@ class FkSearchContainer extends StatelessWidget {
   final IconData? icon;
   final bool showBackground, showBorder;
   final VoidCallback? Ontap;
+  final EdgeInsetsGeometry padding;
   const FkSearchContainer({
     super.key,
     required this.text,
@@ -16,6 +17,7 @@ class FkSearchContainer extends StatelessWidget {
     this.showBackground = true,
     this.showBorder = true,
     this.Ontap,
+    this.padding = const EdgeInsets.symmetric(horizontal: FKSizes.defaultSpace),
   });
 
   @override
@@ -24,7 +26,7 @@ class FkSearchContainer extends StatelessWidget {
     return GestureDetector(
       onTap: Ontap,
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: FKSizes.defaultSpace),
+        padding: padding,
         child: Container(
           width: FKDeviceUtility.getScreenWidth(context),
           padding: EdgeInsets.all(FKSizes.md),
