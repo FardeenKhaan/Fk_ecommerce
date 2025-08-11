@@ -49,7 +49,7 @@ Welcome to **FK E-Commerce**, a feature-rich mobile shopping app developed in **
 |----------------|---------------------------------|
 | Flutter        | UI & cross-platform development |
 | Firebase       | Auth, Analytics                 |
-| Supabase       | Product data, real-time DB      |
+| Supabase       | Product data, real-time DB and Cloud Storage      |
 | GetX           | State mgmt & navigation         |
 | Google Fonts   | Custom text styling             |
 
