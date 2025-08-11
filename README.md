@@ -39,7 +39,7 @@ Welcome to **FK E-Commerce**, a feature-rich mobile shopping app developed in **
 - 🧭 Onboarding flow with splash screens
 - 🔧 GetX-based state management & routing
 - 📊 Firebase Analytics support
-- 💳 **Upcoming**: Stripe or Razorpay integration
+- 💳 **Upcoming**: Stripe payment method integration
 
 ---
 
