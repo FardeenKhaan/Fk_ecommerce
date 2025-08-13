@@ -3,6 +3,7 @@ import 'package:fk_ecommerce/common/widgets/common_text_widget/product_price_tex
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:fk_ecommerce/common/widgets/icons/fk_circular_icon.dart';
 import 'package:fk_ecommerce/common/widgets/images/fk_rounded_image.dart';
+import 'package:fk_ecommerce/common/widgets/texts/fk_brand_title_text_with_verified_icon.dart';
 import 'package:fk_ecommerce/common/widgets/texts/product_title_text.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:fk_ecommerce/utils/constants/image_Strings.dart';
@@ -77,22 +78,7 @@ class FkProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   SizedBox(height: FKSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        'Snippet',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      SizedBox(width: FKSizes.xs),
-                      Icon(
-                        Icons.verified,
-                        color: FKColors.primary,
-                        size: FKSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  FkBrandTitleWithVerifiedIcon(title: 'Snippet'),
                 ],
               ),
             ),
