@@ -1,6 +1,6 @@
 # 🛒 FK E-Commerce App
 
-> A modern eCommerce Flutter app — built with Firebase & Supabase — under **active daily development**.
+> A modern eCommerce Flutter app — built with Firebase & Supabase + Payment integration— under **active daily development**.
 
 Welcome to **FK E-Commerce**, a feature-rich mobile shopping app developed in **Flutter** with a powerful backend powered by **Firebase** and **Supabase**. This project is being worked on and improved **daily**, with new features, refactors, and enhancements committed frequently.
 
@@ -39,7 +39,7 @@ Welcome to **FK E-Commerce**, a feature-rich mobile shopping app developed in **
 - 🧭 Onboarding flow with splash screens
 - 🔧 GetX-based state management & routing
 - 📊 Firebase Analytics support
-- 💳 **Upcoming**: Stripe or Razorpay integration
+- 💳 **Upcoming**: Stripe payment method integration
 
 ---
 
@@ -49,7 +49,7 @@ Welcome to **FK E-Commerce**, a feature-rich mobile shopping app developed in **
 |----------------|---------------------------------|
 | Flutter        | UI & cross-platform development |
 | Firebase       | Auth, Analytics                 |
-| Supabase       | Product data, real-time DB      |
+| Supabase       | Product data, real-time DB and Cloud Storage      |
 | GetX           | State mgmt & navigation         |
 | Google Fonts   | Custom text styling             |
 
