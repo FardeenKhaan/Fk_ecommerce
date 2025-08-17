@@ -78,7 +78,7 @@ class FkProductCardVertical extends StatelessWidget {
                     smallSize: true,
                   ),
                   SizedBox(height: FKSizes.spaceBtwItems / 2),
-                  FkBrandTitleWithVerifiedIcon(title: 'Snippet'),
+                  FkBrandTitleWithVerifiedIcon(title: 'Snippet',),
                 ],
               ),
             ),
