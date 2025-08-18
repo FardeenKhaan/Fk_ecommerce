@@ -1,11 +1,11 @@
 import 'package:fk_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:fk_ecommerce/common/widgets/appbar/tabbar.dart';
-import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:fk_ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:fk_ecommerce/common/widgets/products/cart/cart_menu_icon.dart';
-import 'package:fk_ecommerce/common/widgets/products/product_cards/brand_card.dart';
+import 'package:fk_ecommerce/common/widgets/brands/brand_card.dart';
 import 'package:fk_ecommerce/common/widgets/texts/section_heading.dart';
+import 'package:fk_ecommerce/features/authentication/screens/store/widgets/category_tab.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:fk_ecommerce/utils/constants/sizes.dart';
 import 'package:fk_ecommerce/utils/helpers/helper_function.dart';
@@ -77,24 +77,7 @@ class FkStoreScreen extends StatelessWidget {
           },
 
           /// -- body --
-          body: TabBarView(
-            children: [
-              Padding(
-                padding: EdgeInsets.all(FKSizes.defaultSpace),
-                child: Column(
-                  children: [
-                    FkRoundedContainer(
-                      showBorder: true,
-                      borderColor: FKColors.darkGrey,
-                      backgroundColor: Colors.transparent,
-                      margin: EdgeInsets.only(bottom: FKSizes.spaceBtwItems),
-                      child: Column(children: [FKBrandCard(showBorder: false)]),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-          ),
+          body: TabBarView(children: [FKCategoryTab()]),
         ),
       ),
     );
