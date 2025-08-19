@@ -1,10 +1,10 @@
 import 'package:fk_ecommerce/features/authentication/screens/home/home.dart';
 import 'package:fk_ecommerce/features/authentication/screens/store/store.dart';
+import 'package:fk_ecommerce/features/authentication/screens/wishlist/wishlist.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:fk_ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/src/simple/get_controllers.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -20,19 +20,12 @@ class NavigationMenu extends StatelessWidget {
           elevation: 0,
           height: 80,
           backgroundColor: darkmode ? Colors.black : Colors.white,
-          indicatorColor:
-              darkmode
-                  ? FKColors.white.withOpacity(0.1)
-                  : FKColors.black.withOpacity(0.1),
-          onDestinationSelected:
-              (index) => controller.selectedIndex.value = index,
+          indicatorColor: darkmode ? FKColors.white.withOpacity(0.1) : FKColors.black.withOpacity(0.1),
+          onDestinationSelected: (index) => controller.selectedIndex.value = index,
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: 'Home'),
             NavigationDestination(icon: Icon(Icons.search), label: 'Store'),
-            NavigationDestination(
-              icon: Icon(Icons.notifications),
-              label: 'Wishlist',
-            ),
+            NavigationDestination(icon: Icon(Icons.notifications), label: 'Wishlist'),
             NavigationDestination(icon: Icon(Icons.person), label: 'Profile'),
           ],
         ),
@@ -52,9 +45,10 @@ class NavigationController extends GetxController {
   final screens = [
     HomeScreen(),
     FkStoreScreen(),
+    FavouriteScreen(),
     // Container(color: Colors.green),
     // Container(color: Colors.deepPurple),
-    Container(color: Colors.orange),
+    // Container(color: Colors.orange),
     Container(color: Colors.blue),
   ];
 }
