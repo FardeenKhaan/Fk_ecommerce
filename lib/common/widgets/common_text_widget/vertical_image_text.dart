@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 
 class FkVerticalImageText extends StatelessWidget {
   final Color textColor;
-  final Color backgroundColor;
+  final Color? backgroundColor;
   final String title, image;
   final VoidCallback? onTap;
   const FkVerticalImageText({
     super.key,
-    this.backgroundColor = FKColors.white,
+    this.backgroundColor,
     required this.title,
     required this.image,
     this.onTap,
@@ -31,16 +31,11 @@ class FkVerticalImageText extends StatelessWidget {
               height: 56,
               padding: EdgeInsets.all(FKSizes.sm),
               decoration: BoxDecoration(
-                color:
-                    backgroundColor ?? (dark ? FKColors.black : FKColors.white),
+                color: backgroundColor ?? (dark ? FKColors.black : FKColors.white),
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
-                child: Image(
-                  image: AssetImage(image),
-                  fit: BoxFit.cover,
-                  color: dark ? FKColors.light : FKColors.dark,
-                ),
+                child: Image(image: AssetImage(image), fit: BoxFit.cover, color: dark ? FKColors.light : FKColors.dark),
               ),
             ),
 
