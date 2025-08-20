@@ -1,4 +1,4 @@
-# 🛒 FK E-Commerce App
+# 🛒 E-Commerce App
 
 > A modern eCommerce Flutter app — built with Firebase & Supabase + Payment integration— under **active daily development**.
 
