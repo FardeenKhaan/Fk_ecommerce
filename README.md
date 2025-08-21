@@ -26,7 +26,7 @@ Welcome to **FK E-Commerce**, a feature-rich mobile shopping app developed in **
 🔄 **Actively Updated Daily**  
 📦 Core features implemented  
 🧾 Backend integrated (Firebase + Supabase)  
-💳 Payment system in progress  
+💳 Payment system will be implemented in future
 
 ---
 
