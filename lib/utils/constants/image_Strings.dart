@@ -38,6 +38,9 @@ class FKImageStrings {
   static const String promoBanner2 = "assets/images/banner/promo-banner-2.png";
   static const String promoBanner3 = "assets/images/banner/promo-banner-1.png";
 
+  // -- Profile
+  static const String user = "assets/images/user/user.png";
+
   // -- Products
   static const String productImages = "assets/images/products/nike-shoes.png";
   static const String productImages2 = "assets/images/products/product-1.png";

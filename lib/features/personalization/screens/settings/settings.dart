@@ -3,9 +3,11 @@ import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/primary_hea
 import 'package:fk_ecommerce/common/widgets/listtiles/setting_menu_tile.dart';
 import 'package:fk_ecommerce/common/widgets/listtiles/user_profile_tile.dart';
 import 'package:fk_ecommerce/common/widgets/texts/section_heading.dart';
+import 'package:fk_ecommerce/features/personalization/screens/profile/profile_screen.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:fk_ecommerce/utils/constants/sizes.dart';
 import 'package:flutter/material.dart';
+import 'package:get/route_manager.dart';
 
 class SettingScreen extends StatelessWidget {
   const SettingScreen({super.key});
@@ -28,7 +30,7 @@ class SettingScreen extends StatelessWidget {
                   ),
 
                   /// User profile Card
-                  FkUserProfileTile(),
+                  FkUserProfileTile(onPressed: () => Get.to(() => ProfileScreen())),
                   SizedBox(height: FKSizes.spaceBtwSections),
                 ],
               ),

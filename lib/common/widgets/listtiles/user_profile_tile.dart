@@ -4,7 +4,8 @@ import 'package:fk_ecommerce/utils/constants/image_Strings.dart';
 import 'package:flutter/material.dart';
 
 class FkUserProfileTile extends StatelessWidget {
-  const FkUserProfileTile({super.key});
+  final VoidCallback? onPressed;
+  const FkUserProfileTile({super.key, this.onPressed});
 
   @override
   Widget build(BuildContext context) {
@@ -15,7 +16,7 @@ class FkUserProfileTile extends StatelessWidget {
         'fardeenkhan@gmail.com',
         style: Theme.of(context).textTheme.bodyMedium!.apply(color: FKColors.white),
       ),
-      trailing: IconButton(onPressed: () {}, icon: Icon(Icons.edit, color: FKColors.white)),
+      trailing: IconButton(onPressed: onPressed, icon: Icon(Icons.edit, color: FKColors.white)),
     );
   }
 }

@@ -33,11 +33,7 @@ class HomeScreen extends StatelessWidget {
                     padding: EdgeInsets.only(left: FKSizes.defaultSpace),
                     child: Column(
                       children: [
-                        FkSectionHeading(
-                          title: 'Popular Categories',
-                          showActionButton: false,
-                          textcolor: Colors.white,
-                        ),
+                        FkSectionHeading(title: 'Popular Categories', showActionButton: false, textcolor: Colors.white),
                         SizedBox(height: FKSizes.spaceBtwItems),
 
                         // --categories
@@ -45,6 +41,7 @@ class HomeScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(height: FKSizes.spaceBtwSections),
                 ],
               ),
             ),
@@ -55,11 +52,7 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   FkPromoSlider(
-                    banners: [
-                      FKImageStrings.promoBanner1,
-                      FKImageStrings.promoBanner2,
-                      FKImageStrings.promoBanner1,
-                    ],
+                    banners: [FKImageStrings.promoBanner1, FKImageStrings.promoBanner2, FKImageStrings.promoBanner1],
                   ),
                   SizedBox(height: FKSizes.spaceBtwItems),
 
@@ -68,10 +61,7 @@ class HomeScreen extends StatelessWidget {
                   SizedBox(height: FKSizes.spaceBtwItems),
 
                   // --Popular Products
-                  FkGridLayout(
-                    itemcount: 4,
-                    itembuilder: (BuildContext, int) => FkProductCardVertical(),
-                  ),
+                  FkGridLayout(itemcount: 4, itembuilder: (BuildContext, int) => FkProductCardVertical()),
                 ],
               ),
             ),

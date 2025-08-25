@@ -1,6 +1,7 @@
 import 'package:fk_ecommerce/features/authentication/screens/home/home.dart';
 import 'package:fk_ecommerce/features/authentication/screens/store/store.dart';
 import 'package:fk_ecommerce/features/authentication/screens/wishlist/wishlist.dart';
+import 'package:fk_ecommerce/features/personalization/screens/settings/settings.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:fk_ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
@@ -46,9 +47,10 @@ class NavigationController extends GetxController {
     HomeScreen(),
     FkStoreScreen(),
     FavouriteScreen(),
+    SettingScreen(),
     // Container(color: Colors.green),
     // Container(color: Colors.deepPurple),
     // Container(color: Colors.orange),
-    Container(color: Colors.blue),
+    // Container(color: Colors.blue),
   ];
 }

@@ -8,14 +8,14 @@ class FkAppBar extends StatelessWidget implements PreferredSizeWidget {
   final Widget? title;
   final bool ShowBackArrow;
   final IconData? leadingIcon;
-  final List<Widget> actions;
+  final List<Widget>? actions;
   final VoidCallback? leadingOnpressed;
   const FkAppBar({
     super.key,
     this.title,
     this.ShowBackArrow = false,
     this.leadingIcon,
-    required this.actions,
+    this.actions,
     this.leadingOnpressed,
   });
 
@@ -27,15 +27,9 @@ class FkAppBar extends StatelessWidget implements PreferredSizeWidget {
         automaticallyImplyLeading: false,
         leading:
             ShowBackArrow
-                ? IconButton(
-                  onPressed: () => Get.back(),
-                  icon: Icon(Icons.arrow_left),
-                )
+                ? IconButton(onPressed: () => Get.back(), icon: Icon(Icons.arrow_left))
                 : leadingIcon != null
-                ? IconButton(
-                  onPressed: () => leadingOnpressed,
-                  icon: Icon(leadingIcon),
-                )
+                ? IconButton(onPressed: () => leadingOnpressed, icon: Icon(leadingIcon))
                 : null,
         title: title,
         actions: actions,

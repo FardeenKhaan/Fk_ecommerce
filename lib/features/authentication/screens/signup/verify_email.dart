@@ -1,4 +1,3 @@
-import 'package:fk_ecommerce/common/widgets/success_screen.dart';
 import 'package:fk_ecommerce/routes/app_routes.dart';
 import 'package:fk_ecommerce/utils/constants/image_Strings.dart';
 import 'package:fk_ecommerce/utils/constants/sizes.dart';
