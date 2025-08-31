@@ -5,11 +5,15 @@ import 'package:fk_ecommerce/common/widgets/icons/fk_circular_icon.dart';
 import 'package:fk_ecommerce/common/widgets/images/fk_rounded_image.dart';
 import 'package:fk_ecommerce/common/widgets/texts/fk_brand_title_text_with_verified_icon.dart';
 import 'package:fk_ecommerce/common/widgets/texts/product_title_text.dart';
+import 'package:fk_ecommerce/features/authentication/screens/product_details/product_details.dart';
+import 'package:fk_ecommerce/routes/app_routes.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
 import 'package:fk_ecommerce/utils/constants/image_Strings.dart';
 import 'package:fk_ecommerce/utils/constants/sizes.dart';
 import 'package:fk_ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 
 class FkProductCardVertical extends StatelessWidget {
   const FkProductCardVertical({super.key});
@@ -18,7 +22,7 @@ class FkProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = FkHelperFunction.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.toNamed(Routes.productDetails),
       child: Container(
         width: 180,
         padding: EdgeInsets.all(1),
@@ -36,33 +40,20 @@ class FkProductCardVertical extends StatelessWidget {
               child: Stack(
                 children: [
                   // thumbnail image
-                  FkRoudedImage(
-                    imageUrl: FKImageStrings.productImages4,
-                    applyImageRadius: true,
-                  ),
+                  FkRoudedImage(imageUrl: FKImageStrings.productImages4, applyImageRadius: true),
                   // sale tag
                   Positioned(
                     top: 12,
                     child: FkRoundedContainer(
                       radius: FKSizes.sm,
                       backgroundColor: FKColors.secondary.withOpacity(0.8),
-                      padding: EdgeInsets.symmetric(
-                        horizontal: FKSizes.sm,
-                        vertical: FKSizes.xs,
-                      ),
+                      padding: EdgeInsets.symmetric(horizontal: FKSizes.sm, vertical: FKSizes.xs),
                       child: FkProductPriceText(price: '35.5'),
                     ),
                   ),
 
                   // Favourite icon Button
-                  Positioned(
-                    top: 0,
-                    right: 0,
-                    child: FkCircularIcon(
-                      icon: Icons.favorite_outline,
-                      color: Colors.red,
-                    ),
-                  ),
+                  Positioned(top: 0, right: 0, child: FkCircularIcon(icon: Icons.favorite_outline, color: Colors.red)),
                 ],
               ),
             ),
@@ -73,12 +64,9 @@ class FkProductCardVertical extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  FkProductTitleText(
-                    title: 'Snippet Blue Jeans',
-                    smallSize: true,
-                  ),
+                  FkProductTitleText(title: 'Snippet Blue Jeans', smallSize: true),
                   SizedBox(height: FKSizes.spaceBtwItems / 2),
-                  FkBrandTitleWithVerifiedIcon(title: 'Snippet',),
+                  FkBrandTitleWithVerifiedIcon(title: 'Snippet'),
                 ],
               ),
             ),
@@ -106,9 +94,7 @@ class FkProductCardVertical extends StatelessWidget {
                   child: SizedBox(
                     width: FKSizes.iconLg * 1.2,
                     height: FKSizes.iconLg * 1.2,
-                    child: Center(
-                      child: Icon(Icons.add, color: FKColors.light),
-                    ),
+                    child: Center(child: Icon(Icons.add, color: FKColors.light)),
                   ),
                 ),
               ],
