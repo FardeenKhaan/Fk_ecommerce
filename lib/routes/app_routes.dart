@@ -1,4 +1,3 @@
-
 abstract class Routes {
   static const LOGIN = '/login';
   static const SIGNUP = '/signup';
@@ -9,4 +8,5 @@ abstract class Routes {
   static const ResetPassword = '/reset_password';
   static const NavigationMenu = '/navigation_menu';
   static const MARKSHEET = '/marksheet';
+  static const productDetails = '/product_details';
 }

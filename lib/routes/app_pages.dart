@@ -3,6 +3,7 @@ import 'package:fk_ecommerce/features/authentication/screens/OnBoarding/onboardi
 import 'package:fk_ecommerce/features/authentication/screens/login/login_screen.dart';
 import 'package:fk_ecommerce/features/authentication/screens/password_configuration/forgot_password.dart';
 import 'package:fk_ecommerce/features/authentication/screens/password_configuration/reset_password.dart';
+import 'package:fk_ecommerce/features/authentication/screens/product_details/product_details.dart';
 import 'package:fk_ecommerce/features/authentication/screens/signup/signup_screen.dart';
 import 'package:fk_ecommerce/features/authentication/screens/signup/verify_email.dart';
 import 'package:fk_ecommerce/navigation_menu.dart';
@@ -18,4 +19,5 @@ final List<GetPage> appPages = [
   GetPage(name: Routes.ForgotPassword, page: () => ForgotPassword()),
   GetPage(name: Routes.ResetPassword, page: () => ResetPassword()),
   GetPage(name: Routes.NavigationMenu, page: () => NavigationMenu()),
+  GetPage(name: Routes.productDetails, page: () => ProductDetailsScreen()),
 ];
