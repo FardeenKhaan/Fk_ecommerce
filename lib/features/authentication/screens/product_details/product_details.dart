@@ -1,4 +1,5 @@
 import 'package:fk_ecommerce/features/authentication/screens/product_details/widgets/product_image_slider.dart';
+import 'package:fk_ecommerce/features/authentication/screens/product_details/widgets/product_meta_data.dart';
 import 'package:fk_ecommerce/features/authentication/screens/product_details/widgets/ratingAndshare.dart';
 import 'package:fk_ecommerce/utils/constants/sizes.dart';
 import 'package:fk_ecommerce/utils/helpers/helper_function.dart';
@@ -28,6 +29,9 @@ class ProductDetailsScreen extends StatelessWidget {
                 children: [
                   /// --Rating and Share
                   FkRatingAndShare(),
+
+                  /// -- Price, title, stock, brands
+                  FkProductMetaData(),
                 ],
               ),
             ),
