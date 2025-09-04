@@ -30,6 +30,8 @@ class FkProductMetaData extends StatelessWidget {
               '\$99.99',
               style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough),
             ),
+            SizedBox(width: FKSizes.spaceBtwItems),
+            FkProductPriceText(price: '175', isLarge: true),
           ],
         ),
 
