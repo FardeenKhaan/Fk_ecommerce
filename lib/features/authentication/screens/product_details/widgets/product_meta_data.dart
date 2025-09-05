@@ -1,6 +1,11 @@
 import 'package:fk_ecommerce/common/widgets/common_text_widget/product_price_text.dart';
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
+import 'package:fk_ecommerce/common/widgets/images/fk_circular_image.dart';
+import 'package:fk_ecommerce/common/widgets/texts/fk_brand_title_text_with_verified_icon.dart';
+import 'package:fk_ecommerce/common/widgets/texts/product_title_text.dart';
 import 'package:fk_ecommerce/utils/constants/colors.dart';
+import 'package:fk_ecommerce/utils/constants/enums.dart';
+import 'package:fk_ecommerce/utils/constants/image_Strings.dart';
 import 'package:fk_ecommerce/utils/constants/sizes.dart';
 import 'package:fk_ecommerce/utils/helpers/helper_function.dart';
 import 'package:flutter/material.dart';
@@ -34,21 +39,34 @@ class FkProductMetaData extends StatelessWidget {
             FkProductPriceText(price: '175', isLarge: true),
           ],
         ),
+        SizedBox(height: FKSizes.spaceBtwItems / 1.5),
 
-        // SizedBox(height: 4.0),
+        /// -- Title
+        FkProductTitleText(title: 'Green Nike Spot'),
+        SizedBox(height: FKSizes.spaceBtwItems / 1.5),
 
-        // /// -- Stock
-        // Text(
-        //   'In Stock',
-        //   style: Theme.of(context).textTheme.bodyText2,
-        // ),
-        // SizedBox(height: 4.0),
+        /// -- Stock Status
+        Row(
+          children: [
+            FkProductTitleText(title: 'Status'),
+            SizedBox(height: FKSizes.spaceBtwItems / 1.5),
+            Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
+          ],
+        ),
+        SizedBox(height: FKSizes.spaceBtwItems / 1.5),
 
-        // /// -- Brands
-        // Text(
-        //   'Brand Name',
-        //   style: Theme.of(context).textTheme.bodyText2,
-        // ),
+        /// -- Brand
+        Row(
+          children: [
+            FkCircularImage(
+              image: FKImageStrings.shoeIcon,
+              width: 32,
+              height: 32,
+              overlayColor: darkMode ? FKColors.white : FKColors.black,
+            ),
+            FkBrandTitleWithVerifiedIcon(title: 'Nike', brandTextSizes: TextSizes.medium),
+          ],
+        ),
       ],
     );
   }
