@@ -1,3 +1,4 @@
+import 'package:fk_ecommerce/features/authentication/screens/product_details/widgets/product_attributes.dart';
 import 'package:fk_ecommerce/features/authentication/screens/product_details/widgets/product_image_slider.dart';
 import 'package:fk_ecommerce/features/authentication/screens/product_details/widgets/product_meta_data.dart';
 import 'package:fk_ecommerce/features/authentication/screens/product_details/widgets/ratingAndshare.dart';
@@ -32,6 +33,9 @@ class ProductDetailsScreen extends StatelessWidget {
 
                   /// -- Price, title, stock, brands
                   FkProductMetaData(),
+
+                  /// --Attribution
+                  FkProductAttributes(),
                 ],
               ),
             ),
