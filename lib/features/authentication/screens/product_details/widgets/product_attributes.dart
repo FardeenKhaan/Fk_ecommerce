@@ -1,3 +1,4 @@
+import 'package:fk_ecommerce/common/widgets/common_text_widget/product_price_text.dart';
 import 'package:fk_ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:fk_ecommerce/common/widgets/texts/product_title_text.dart';
 import 'package:fk_ecommerce/common/widgets/texts/section_heading.dart';
@@ -24,18 +25,36 @@ class FkProductAttributes extends StatelessWidget {
                 children: [
                   FkSectionHeading(title: 'Variation', showActionButton: false),
                   SizedBox(width: FKSizes.spaceBtwItems),
-                  FkProductTitleText(title: 'Price:', smallSize: true),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Row(
+                        children: [
+                          FkProductTitleText(title: 'Price:', smallSize: true),
+                          SizedBox(width: FKSizes.spaceBtwItems),
+
+                          /// Actual Price
+                          Text(
+                            '\$150',
+                            style: Theme.of(
+                              context,
+                            ).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough),
+                          ),
+                          SizedBox(width: FKSizes.spaceBtwItems),
+
+                          /// Sale Price
+                          FkProductPriceText(price: '20'),
+                        ],
+                      ),
+                    ],
+                  ),
+
+                  /// Stock
                   Row(
                     children: [
-                      /// Actual Price
-                      Text(
-                        '\$150',
-                        style: Theme.of(context).textTheme.titleSmall!.apply(decoration: TextDecoration.lineThrough),
-                      ),
+                      FkProductTitleText(title: 'Stock:', smallSize: true),
+                      Text('In Stock', style: Theme.of(context).textTheme.titleMedium),
                       SizedBox(width: FKSizes.spaceBtwItems),
-
-                      /// Sale Price
-                      Text('\$100', style: Theme.of(context).textTheme.titleSmall),
                     ],
                   ),
                 ],
