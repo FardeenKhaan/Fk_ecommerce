@@ -34,7 +34,7 @@ class ProductDetailsScreen extends StatelessWidget {
                   /// -- Price, title, stock, brands
                   FkProductMetaData(),
 
-                  /// --Attribution
+                  /// --Attribute
                   FkProductAttributes(),
                 ],
               ),
